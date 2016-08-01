@@ -1,0 +1,29 @@
+{
+  "name": "livescript-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "production": "webpack -p",
+    "lsc:w": "lsc -wco build app",
+    "start": "webpack-dev-server",
+    "dev": "concurrently --kill-others 'npm run lsc:w' 'npm run start'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.11.1",
+    "concurrently": "^2.2.0",
+    "html-webpack-plugin": "^2.22.0",
+    "livescript-loader": "^0.1.5",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
